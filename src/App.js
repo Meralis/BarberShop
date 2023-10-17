@@ -6,6 +6,8 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import RootLayout from "./components/RootLayout/RootLayout";
 
+// Testing message
+
 function App() {
 
 const router = createBrowserRouter([

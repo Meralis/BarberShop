@@ -1,4 +1,4 @@
-function Banner() {
+const Banner = () => {
 
     return <>
         <div className={'banner'}>

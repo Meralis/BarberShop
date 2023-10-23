@@ -1,4 +1,9 @@
+import Header from "../../common components/Header/Header";
+
 const About = () => {
-    return <h1>About page</h1>
+    return <>
+        <Header />
+        <h1>About page</h1>
+    </>
 }
 export default About;

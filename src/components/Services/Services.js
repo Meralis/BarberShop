@@ -1,5 +1,10 @@
+import Header from "../../common components/Header/Header";
+
 const Services = () => {
 
-    return <h1>Services page</h1>
+    return <>
+        <Header />
+        <h1>Services page</h1>
+    </>
 }
 export default Services;

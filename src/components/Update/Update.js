@@ -2,7 +2,7 @@ import Header from "../../common components/Header/Header";
 
 const Update = () => {
     return <>
-        <Header />
+        <Header/>
         <h1>Update page</h1>
     </>
 }

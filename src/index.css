@@ -8,11 +8,17 @@
     --header-item-padding-vertical: .9rem;
     --header-item-margin-horisontal: 2rem;
     --header-logo-padding-top: 40px;
-    --header-logo-padding-bottom: 30px;
+    --header-logo-padding-bottom: 3rem;
+    --footer-item-margin-horisontal: 3.5rem;
+    --footer-padding-vertical: 6rem;
 }
 
 a {
     text-decoration: none;
+}
+
+.footer a {
+    color: inherit;
 }
 
 body {
@@ -37,32 +43,34 @@ body {
     padding: var(--header-logo-padding-top) 0 var(--header-logo-padding-bottom);
 }
 
-.header__nav {
+.header .nav {
     box-sizing: border-box;
     border: 1px var(--header-color-border) solid;
     padding: 2px 0;
 }
 
-.header__inners {
+.nav__inners {
     align-items: center;
 }
 
-.header__inners > .header__items {
+.nav__inners > .nav__items {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: var(--font-Montserrat);
     font-size: 1.3rem;
 }
 
-.header__item {
+.header .nav__inners > .nav__items {
+    font-family: var(--font-Montserrat);
+}
+
+.header .nav__item {
     letter-spacing: .2em;
     padding: var(--header-item-padding-vertical) 0;
     margin: 0 var(--header-item-margin-horisontal);
     border-bottom: 3px solid transparent;
 }
 
-.header__item:hover {
+.header .nav__item:hover {
     border-bottom: 3px solid black;
 }
 
@@ -91,3 +99,32 @@ body {
     z-index: 5;
 }
 
+.footer {
+    padding: var(--footer-padding-vertical) 0;
+}
+
+.footer .nav__item {
+    letter-spacing: 0;
+    margin: 0 var(--footer-item-margin-horisontal);
+}
+
+.footer .nav__inners > .nav__items {
+    font-family: var(--font-Open-Sans);
+    font-weight: bold;
+    line-height: 33px;
+    justify-content: center;
+}
+
+.footer .company-name {
+    text-align: center;
+    font-family: var(--font-Patua-One);
+    font-size: 1.6rem;
+    line-height: 44px;
+    letter-spacing: .2em;
+}
+
+.footer .copyright {
+    text-align: center;
+    font-family: var(--font-Open-Sans);
+    font-size: 1.7rem;
+}

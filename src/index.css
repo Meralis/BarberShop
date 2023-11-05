@@ -5,20 +5,11 @@
     --font-Patua-One: 'Patua One', sans-serif;
     --font-Roboto-Condensed: 'Roboto Condensed', sans-serif;
     --header-color-border: rgba(67, 67, 67, 0.2);
-    --header-item-padding-vertical: .9rem;
-    --header-item-margin-horisontal: 2rem;
-    --header-logo-padding-top: 40px;
-    --header-logo-padding-bottom: 3rem;
-    --footer-item-margin-horisontal: 3.5rem;
-    --footer-padding-vertical: 6rem;
+    --footer-wrap-color: rgba(43, 43, 43, 1);
 }
 
 a {
     text-decoration: none;
-}
-
-.footer a {
-    color: inherit;
 }
 
 body {
@@ -38,15 +29,15 @@ body {
     justify-content: center;
 }
 
-.logo {
+.header__logo-img {
     width: 100px;
-    padding: var(--header-logo-padding-top) 0 var(--header-logo-padding-bottom);
+    padding: 4rem 0 3rem;
 }
 
 .header .nav {
     box-sizing: border-box;
     border: 1px var(--header-color-border) solid;
-    padding: 2px 0;
+    padding: .2rem 0;
 }
 
 .nav__inners {
@@ -65,8 +56,8 @@ body {
 
 .header .nav__item {
     letter-spacing: .2em;
-    padding: var(--header-item-padding-vertical) 0;
-    margin: 0 var(--header-item-margin-horisontal);
+    padding: .9rem 0;
+    margin: 0 2rem;
     border-bottom: 3px solid transparent;
 }
 
@@ -100,31 +91,39 @@ body {
 }
 
 .footer {
-    padding: var(--footer-padding-vertical) 0;
+    padding: 6rem 0;
+}
+
+.footer a {
+    color: inherit;
 }
 
 .footer .nav__item {
     letter-spacing: 0;
-    margin: 0 var(--footer-item-margin-horisontal);
+    margin: 0 3.5rem;
 }
 
 .footer .nav__inners > .nav__items {
     font-family: var(--font-Open-Sans);
     font-weight: bold;
-    line-height: 33px;
-    justify-content: center;
+    line-height: 3.3rem;
 }
 
-.footer .company-name {
+.footer .footer__company-name {
     text-align: center;
     font-family: var(--font-Patua-One);
     font-size: 1.6rem;
-    line-height: 44px;
+    line-height: 4.4rem;
     letter-spacing: .2em;
 }
 
-.footer .copyright {
+.footer .footer__copyright {
     text-align: center;
     font-family: var(--font-Open-Sans);
     font-size: 1.7rem;
+}
+
+.footer-wrap {
+    height: 12rem;
+    background-color: var(--footer-wrap-color);
 }

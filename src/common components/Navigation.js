@@ -1,7 +1,7 @@
 import {Nav, Navbar} from "react-bootstrap";
 
 const Navigation = () => {
-    return <>
+    return (
         <div className='nav'>
             <Navbar expand='lg' className='container nav__inners row'>
                 <Nav className='nav__items justify-content-around align-items-center'>
@@ -13,7 +13,6 @@ const Navigation = () => {
                 </Nav>
             </Navbar>
         </div>
-    </>
-
+    );
 }
 export default Navigation;

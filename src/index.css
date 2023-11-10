@@ -1,36 +1,129 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    font-size: 10px;
+    --font-Montserrat: 'Montserrat';
+    --font-Open-Sans: 'Open Sans', sans-serif;
+    --font-Patua-One: 'Patua One', sans-serif;
+    --font-Roboto-Condensed: 'Roboto Condensed', sans-serif;
+    --header-color-border: rgba(67, 67, 67, 0.2);
+    --footer-wrap-color: rgba(43, 43, 43, 1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+    text-decoration: none;
 }
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo-img {
+    width: 100px;
+    padding: 4rem 0 3rem;
+}
+
+.header .nav {
+    box-sizing: border-box;
+    border: 1px var(--header-color-border) solid;
+    padding: .2rem 0;
+}
+
+.nav__inners {
+    align-items: center;
+}
+
+.nav__inners > .nav__items {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.header .nav__inners > .nav__items {
+    font-family: var(--font-Montserrat);
+}
+
+.header .nav__item {
+    letter-spacing: .2em;
+    padding: .9rem 0;
+    margin: 0 2rem;
+    border-bottom: 3px solid transparent;
+}
+
+.header .nav__item:hover {
+    border-bottom: 3px solid black;
+}
+
 .banner {
-  position: relative;
-  background-image: url('/public/images/banner.jpeg');
-  background-size: cover;
-  height: 592px;
-  width: 100%;
-  color: white;
+    position: relative;
+    background-image: url('/public/images/banner.jpeg');
+    background-size: cover;
+    height: 592px;
+    width: 100%;
+    color: white;
 }
 
 .banner::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0; left: 0;
-  background-color: rgba(0,0,0,0.6);
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .banner__content {
-  position: relative;
-  color: white;
-  z-index: 5;
+    position: relative;
+    color: white;
+    z-index: 5;
+}
+
+.footer {
+    padding: 6rem 0;
+}
+
+.footer a {
+    color: inherit;
+}
+
+.footer .nav__item {
+    letter-spacing: 0;
+    margin: 0 3.5rem;
+}
+
+.footer .nav__inners > .nav__items {
+    font-family: var(--font-Open-Sans);
+    font-weight: bold;
+    line-height: 3.3rem;
+}
+
+.footer .footer__company-name {
+    text-align: center;
+    font-family: var(--font-Patua-One);
+    font-size: 1.6rem;
+    line-height: 4.4rem;
+    letter-spacing: .2em;
+}
+
+.footer .footer__copyright {
+    text-align: center;
+    font-family: var(--font-Open-Sans);
+    font-size: 1.7rem;
+}
+
+.footer-wrap {
+    height: 12rem;
+    background-color: var(--footer-wrap-color);
 }
